@@ -80,17 +80,17 @@ const modules = [
 
 export default function HomePage() {
   return (
-    <div className="space-y-6">
-      <div className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
+    <div className="space-y-8">
+      <div className="space-y-3 text-center max-w-3xl mx-auto">
+        <h1 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
           Welcome to Neuro Master
         </h1>
-        <p className="text-muted-foreground text-lg">
+        <p className="text-muted-foreground text-lg md:text-xl">
           Master neurologic emergencies through interactive learning
         </p>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {modules.map((module) => {
           const Icon = module.icon
           return (
@@ -113,7 +113,7 @@ export default function HomePage() {
         })}
       </div>
 
-      <Card className="mt-8">
+      <Card className="max-w-4xl mx-auto">
         <CardHeader>
           <CardTitle>About This Platform</CardTitle>
           <CardDescription>
